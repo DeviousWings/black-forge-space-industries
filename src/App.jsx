@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 // Pages
 import Home from './pages/Home'
 import Catalog from './pages/Catalog'
+import About from './pages/AboutMe'
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('home')
@@ -24,7 +25,7 @@ export default function App() {
       <main className="flex-1 max-w-4xl mx-auto px-6 py-24 w-full text-center">
         {activeTab === 'home' && <Home setActiveTab={setActiveTab} />}
         {activeTab === 'catalog' && <Catalog setActiveTab={setActiveTab} />}
-        {activeTab === 'about' && <div className="text-left max-w-2xl mx-auto border border-[#222222] bg-[#121212] p-8 rounded-sm">About page placeholder</div>}
+        {activeTab === 'about' && <About setActiveTab={setActiveTab} />}
         {activeTab === 'contact' && <div className="text-left max-w-md mx-auto border border-[#222222] bg-[#121212] p-8 rounded-sm">Contact page placeholder</div>}
       </main>
 
