@@ -7,7 +7,7 @@ import Footer from './components/Footer'
 // Pages
 import Home from './pages/Home'
 import Catalog from './pages/Catalog'
-import About from './pages/AboutMe'
+import About from './pages/About'
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('home')
