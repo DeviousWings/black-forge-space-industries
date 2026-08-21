@@ -70,7 +70,7 @@ export default function Footer({ setActiveTab }) {
           <ul className="space-y-2 text-[11px]">
             <li>
               <a 
-                href="https://your-steele-tech-url.com" 
+                href="https://steele-co.vercel.app/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="hover:text-[#ff6600] transition-colors flex items-center space-x-1"
