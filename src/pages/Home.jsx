@@ -38,7 +38,7 @@ export default function Home({ setActiveTab }) {
           <span className="text-[#ff6600] text-xs font-bold tracking-widest">01 // SLA FABRICATION</span>
           <h3 className="text-lg font-bold text-[#e0e0e0] mt-2 mb-3">High-Detail Resin</h3>
           <p className="text-[#888888] text-xs leading-relaxed">
-            Utilizing the Anycubic Photon Mono printer to produce exceptional geometric fidelity, smooth surface finishes, and crisp custom prototypes.
+            Utilizing the Anycubic Photon Mono 4K printer to produce exceptional geometric fidelity, smooth surface finishes, and crisp custom prototypes.
           </p>
         </div>
 
