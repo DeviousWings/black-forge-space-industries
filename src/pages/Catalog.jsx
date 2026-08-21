@@ -21,7 +21,7 @@ export default function Catalog({ setActiveTab }) {
       name: 'Executive Power Relay',
       category: 'Power Management',
       desc: 'Modular switch housing and power distribution mounting designed for desktop combat rigs and flight sim stations.',
-      status: 'Fabrication Ready'
+      status: 'Engineering Phase'
     },
     {
       id: 'BF-CLK-01',
