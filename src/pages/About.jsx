@@ -157,9 +157,35 @@ export default function About({ setActiveTab }) {
           )}
 
           {loreTab === 'clearance' && (
-            <div className="border border-[#222222] bg-black p-4 rounded-sm space-y-2">
-              <h3 className="text-xs uppercase tracking-widest text-[#ff6600] font-bold">// Security Clearance System</h3>
-              <p className="text-xs">Terminal protocols verified. Level clearance protocols active across all regional workshop nodes.</p>
+            <div className="space-y-4">
+              <div className="border border-[#222222] bg-black p-4 rounded-sm space-y-3">
+                <h3 className="text-xs uppercase tracking-widest text-[#ff6600] font-bold">// BSI Clearance System</h3>
+                <p className="leading-relaxed text-xs">
+                  Blackforge Space Industries operates frontier installations far from conventional authority. The clearance system exists because in isolated frontier environments, information and access control is critical to mission survival.
+                </p>
+                <div className="space-y-2 pt-2">
+                  <div className="text-[11px] font-bold text-[#e0e0e0]">Clearance Tiers:</div>
+                  <div className="grid grid-cols-1 gap-1 text-[11px]">
+                    <div><span className="text-white font-bold">Level 1 (White):</span> Civilian / Visitor — Non crew personnel</div>
+                    <div><span className="text-green-500 font-bold">Level 2 (Green):</span> General Crew — Standard crew members</div>
+                    <div><span className="text-blue-500 font-bold">Level 3 (Blue):</span> Specialist — Technical and medical staff</div>
+                    <div><span className="text-yellow-500 font-bold">Level 4 (Yellow):</span> Senior Staff — Department heads</div>
+                    <div><span className="text-orange-500 font-bold">Level 5 (Orange):</span> Command — Command level officers</div>
+                    <div><span className="text-red-500 font-bold">Level 6 (Red):</span> Black Operations — Restricted — founder level</div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="border border-[#222222] bg-black p-4 rounded-sm space-y-3">
+                <h3 className="text-xs uppercase tracking-widest text-[#ff6600] font-bold">// BSI Access System</h3>
+                <div className="grid grid-cols-1 gap-2 text-[11px]">
+                  <div><span className="text-[#e0e0e0] font-bold">General:</span> Common areas, crew quarters</div>
+                  <div><span className="text-[#e0e0e0] font-bold">Operational:</span> Work areas, labs, engineering</div>
+                  <div><span className="text-[#e0e0e0] font-bold">Restricted:</span> Sensitive systems, armory, data cores</div>
+                  <div><span className="text-[#e0e0e0] font-bold">Authorized:</span> Command deck, mission critical systems</div>
+                  <div><span className="text-[#e0e0e0] font-bold">Classified:</span> Eyes only — no physical access markers</div>
+                </div>
+              </div>
             </div>
           )}
 
