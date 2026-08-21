@@ -87,7 +87,7 @@ export default function Footer({ setActiveTab }) {
 
       {/* Bottom Copyright Bar */}
       <div className="max-w-4xl mx-auto mt-10 pt-6 border-t border-[#222222]/50 text-center text-[10px]">
-        &copy; {new Date().getFullYear()} Black Forge Space Industries. All rights reserved.
+       <p>© {new Date().getFullYear()} Black Forge Space Industries. A brand of Steele Co. All rights reserved.</p>
       </div>
     </footer>
   )
