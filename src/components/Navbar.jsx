@@ -14,12 +14,18 @@ export default function Navbar({ activeTab, setActiveTab }) {
         </div>
 
         {/* Navigation Links */}
-        <nav className="flex items-center space-x-8 font-mono text-xs tracking-widest text-[#888888]">
+        <nav className="flex items-center space-x-6 sm:space-x-8 font-mono text-xs tracking-widest text-[#888888]">
           <button 
             onClick={() => setActiveTab('home')}
             className={`transition-colors hover:text-[#ff6600] ${activeTab === 'home' ? 'text-[#ff6600] border-b border-[#ff6600] pb-1' : ''}`}
           >
             Home
+          </button>
+          <button 
+            onClick={() => setActiveTab('catalog')}
+            className={`transition-colors hover:text-[#ff6600] ${activeTab === 'catalog' ? 'text-[#ff6600] border-b border-[#ff6600] pb-1' : ''}`}
+          >
+            Catalog
           </button>
           <button 
             onClick={() => setActiveTab('about')}
