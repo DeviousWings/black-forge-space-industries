@@ -63,25 +63,25 @@ export default function Footer({ setActiveTab }) {
         </div>
 
         {/* Column 3: Enterprise Network (Steele Tech Link) */}
-<div className="space-y-3">
-  <h3 className="text-[#e0e0e0] font-bold tracking-widest uppercase text-[11px] border-b border-[#222222] pb-1">
-    // Sister Enterprise
-  </h3>
-  <ul className="space-y-2 text-[11px]">
-    <li>
-      <a 
-        href="https://your-steele-tech-url.com" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        className="text-[#ff6600] hover:text-[#ff8833] font-bold transition-colors flex items-center space-x-1"
-      >
-        <span>Steele Tech Infrastructure</span>
-        <span className="text-[10px]">↗</span>
-      </a>
-      <p className="text-[10px] text-[#666666] mt-0.5">IT systems & technical services</p>
-    </li>
-  </ul>
-</div>
+        <div className="space-y-3">
+          <h3 className="text-[#e0e0e0] font-bold tracking-widest uppercase text-[11px] border-b border-[#222222] pb-1">
+            // Sister Enterprise
+          </h3>
+          <ul className="space-y-2 text-[11px]">
+            <li>
+              <a 
+                href="https://your-steele-tech-url.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-[#ff6600] hover:text-[#ff8833] font-bold transition-colors flex items-center space-x-1"
+              >
+                <span>Steele Tech Infrastructure</span>
+                <span className="text-[10px]">↗</span>
+              </a>
+              <p className="text-[10px] text-[#666666] mt-0.5">IT systems & technical services</p>
+            </li>
+          </ul>
+        </div>
 
       </div>
 
