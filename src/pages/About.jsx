@@ -157,33 +157,101 @@ export default function About({ setActiveTab }) {
           )}
 
           {loreTab === 'clearance' && (
-            <div className="space-y-4">
-              <div className="border border-[#222222] bg-black p-4 rounded-sm space-y-3">
-                <h3 className="text-xs uppercase tracking-widest text-[#ff6600] font-bold">// BSI Clearance System</h3>
-                <p className="leading-relaxed text-xs">
+            <div className="space-y-6">
+              {/* Clearance System Table */}
+              <div className="border border-[#222222] bg-black p-4 rounded-sm space-y-4">
+                <h3 className="text-xs uppercase tracking-widest text-[#ff6600] font-bold">BSI CLEARANCE SYSTEM</h3>
+                <p className="text-xs text-[#888888] leading-relaxed">
                   Blackforge Space Industries operates frontier installations far from conventional authority. The clearance system exists because in isolated frontier environments, information and access control is critical to mission survival.
                 </p>
-                <div className="space-y-2 pt-2">
-                  <div className="text-[11px] font-bold text-[#e0e0e0]">Clearance Tiers:</div>
-                  <div className="grid grid-cols-1 gap-1 text-[11px]">
-                    <div><span className="text-white font-bold">Level 1 (White):</span> Civilian / Visitor — Non crew personnel</div>
-                    <div><span className="text-green-500 font-bold">Level 2 (Green):</span> General Crew — Standard crew members</div>
-                    <div><span className="text-blue-500 font-bold">Level 3 (Blue):</span> Specialist — Technical and medical staff</div>
-                    <div><span className="text-yellow-500 font-bold">Level 4 (Yellow):</span> Senior Staff — Department heads</div>
-                    <div><span className="text-orange-500 font-bold">Level 5 (Orange):</span> Command — Command level officers</div>
-                    <div><span className="text-red-500 font-bold">Level 6 (Red):</span> Black Operations — Restricted — founder level</div>
-                  </div>
+                
+                <div className="overflow-x-auto pt-2">
+                  <table className="w-full text-left text-[11px] border-collapse">
+                    <thead>
+                      <tr className="border-b border-[#222222] text-[#ff6600] uppercase tracking-wider">
+                        <th className="py-2 pr-4 font-normal">Level</th>
+                        <th className="py-2 pr-4 font-normal">Color</th>
+                        <th className="py-2 pr-4 font-normal">Designation</th>
+                        <th className="py-2 font-normal">Description</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-[#222222]/50 text-[#888888]">
+                      <tr>
+                        <td className="py-2.5 pr-4 text-[#e0e0e0]">1</td>
+                        <td className="py-2.5 pr-4 text-white">WHITE</td>
+                        <td className="py-2.5 pr-4 text-[#e0e0e0]">CIVILIAN / VISITOR</td>
+                        <td className="py-2.5">Non crew personnel</td>
+                      </tr>
+                      <tr>
+                        <td className="py-2.5 pr-4 text-[#e0e0e0]">2</td>
+                        <td className="py-2.5 pr-4 text-green-500">GREEN</td>
+                        <td className="py-2.5 pr-4 text-[#e0e0e0]">GENERAL CREW</td>
+                        <td className="py-2.5">Standard crew members</td>
+                      </tr>
+                      <tr>
+                        <td className="py-2.5 pr-4 text-[#e0e0e0]">3</td>
+                        <td className="py-2.5 pr-4 text-blue-500">BLUE</td>
+                        <td className="py-2.5 pr-4 text-[#e0e0e0]">SPECIALIST</td>
+                        <td className="py-2.5">Technical and medical staff</td>
+                      </tr>
+                      <tr>
+                        <td className="py-2.5 pr-4 text-[#e0e0e0]">4</td>
+                        <td className="py-2.5 pr-4 text-yellow-500">YELLOW</td>
+                        <td className="py-2.5 pr-4 text-[#e0e0e0]">SENIOR STAFF</td>
+                        <td className="py-2.5">Department heads</td>
+                      </tr>
+                      <tr>
+                        <td className="py-2.5 pr-4 text-[#e0e0e0]">5</td>
+                        <td className="py-2.5 pr-4 text-orange-500">ORANGE</td>
+                        <td className="py-2.5 pr-4 text-[#e0e0e0]">COMMAND</td>
+                        <td className="py-2.5">Command level officers</td>
+                      </tr>
+                      <tr>
+                        <td className="py-2.5 pr-4 text-[#e0e0e0]">6</td>
+                        <td className="py-2.5 pr-4 text-red-500">RED</td>
+                        <td className="py-2.5 pr-4 text-[#e0e0e0]">BLACK OPERATIONS</td>
+                        <td className="py-2.5">Restricted — founder level</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
 
-              <div className="border border-[#222222] bg-black p-4 rounded-sm space-y-3">
-                <h3 className="text-xs uppercase tracking-widest text-[#ff6600] font-bold">// BSI Access System</h3>
-                <div className="grid grid-cols-1 gap-2 text-[11px]">
-                  <div><span className="text-[#e0e0e0] font-bold">General:</span> Common areas, crew quarters</div>
-                  <div><span className="text-[#e0e0e0] font-bold">Operational:</span> Work areas, labs, engineering</div>
-                  <div><span className="text-[#e0e0e0] font-bold">Restricted:</span> Sensitive systems, armory, data cores</div>
-                  <div><span className="text-[#e0e0e0] font-bold">Authorized:</span> Command deck, mission critical systems</div>
-                  <div><span className="text-[#e0e0e0] font-bold">Classified:</span> Eyes only — no physical access markers</div>
+              {/* Access System Table */}
+              <div className="border border-[#222222] bg-black p-4 rounded-sm space-y-4">
+                <h3 className="text-xs uppercase tracking-widest text-[#ff6600] font-bold">BSI ACCESS SYSTEM</h3>
+                
+                <div className="overflow-x-auto pt-2">
+                  <table className="w-full text-left text-[11px] border-collapse">
+                    <thead>
+                      <tr className="border-b border-[#222222] text-[#ff6600] uppercase tracking-wider">
+                        <th className="py-2 pr-8 font-normal">Access Level</th>
+                        <th className="py-2 font-normal">Areas</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-[#222222]/50 text-[#888888]">
+                      <tr>
+                        <td className="py-2.5 pr-8 text-[#e0e0e0]">GENERAL</td>
+                        <td className="py-2.5">Common areas, crew quarters</td>
+                      </tr>
+                      <tr>
+                        <td className="py-2.5 pr-8 text-[#e0e0e0]">OPERATIONAL</td>
+                        <td className="py-2.5">Work areas, labs, engineering</td>
+                      </tr>
+                      <tr>
+                        <td className="py-2.5 pr-8 text-[#e0e0e0]">RESTRICTED</td>
+                        <td className="py-2.5">Sensitive systems, armory, data cores</td>
+                      </tr>
+                      <tr>
+                        <td className="py-2.5 pr-8 text-[#e0e0e0]">AUTHORIZED</td>
+                        <td className="py-2.5">Command deck, mission critical systems</td>
+                      </tr>
+                      <tr>
+                        <td className="py-2.5 pr-8 text-[#e0e0e0]">CLASSIFIED</td>
+                        <td className="py-2.5">Eyes only — no physical access markers</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
