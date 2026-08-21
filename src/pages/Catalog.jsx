@@ -44,7 +44,7 @@ export default function Catalog({ setActiveTab }) {
           PRODUCTION <span className="text-[#ff6600]">CATALOG</span>
         </h1>
         <p className="text-[#888888] font-mono text-xs md:text-sm leading-relaxed">
-          Engineered via Anycubic Photon Mono SLA high-detail resin printing. Built for desktop simulation environments and custom industrial requirements.
+          Engineered via Anycubic Photon Mono 4K SLA high-detail resin printing. Built for desktop simulation environments and custom industrial requirements.
         </p>
       </div>
 
